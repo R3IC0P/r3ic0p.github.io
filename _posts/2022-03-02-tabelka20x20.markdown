@@ -1,0 +1,80 @@
+---
+layout: post
+title:  "Tabelka mnożenia 20x20"
+date:   2022-03-02 06:34:00 +0100
+categories: jekyll update
+---
+Zadanie tabelka mnożenia 20x20
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabliczka mnożenia 20x20 - Walukiewicz</title>
+  <style>
+    body {
+      background: #454545;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: .5rem;
+      border: 1px solid black;
+      text-align: center;
+      background: mediumaquamarine;
+    }
+
+    .factor {
+      background: lightblue;
+    }
+
+    .green {
+      background: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+  </div>
+  <script>
+    const container = document.querySelector('.container')
+    let ctx = '<table>'
+
+    for (let i=1; i<=20; i++) {
+      ctx += '<tr>'
+      for (let j=1; j<=20; j++) {
+        if (i==1 || j==1) {
+          ctx += `<td class="factor">${i*j}</td>`
+        }
+        else if (i==j) {
+          ctx += `<td class="green">${i*j}</td>`
+        }
+        else {
+          ctx += `<td>${i*j}</td>`
+        }
+      }
+      ctx += '</tr>'
+    }
+
+    ctx += '</table>'
+    container.innerHTML = ctx
+    // Walukiewicz Lukasz
+  </script>
+</body>
+</html>
+```
