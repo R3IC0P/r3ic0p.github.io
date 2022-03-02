@@ -3,6 +3,7 @@ layout: post
 title:  "Tabelka mnożenia 20x20"
 date:   2022-03-02 06:34:00 +0100
 categories: jekyll update
+permalink: /zadanie-tabliczka20x20/
 ---
 Zadanie tabelka mnożenia 20x20
 
@@ -13,7 +14,7 @@ Zadanie tabelka mnożenia 20x20
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabliczka mnożenia 20x20 - Walukiewicz</title>
+  <title>Tabliczka mnożenia 20x20</title>
   <style>
     body {
       background: #454545;
@@ -73,7 +74,6 @@ Zadanie tabelka mnożenia 20x20
 
     ctx += '</table>'
     container.innerHTML = ctx
-    // Walukiewicz Lukasz
   </script>
 </body>
 </html>

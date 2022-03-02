@@ -3,6 +3,7 @@ layout: post
 title:  "Logowanie hasłem"
 date:   2022-03-02 06:34:00 +0100
 categories: jekyll update
+permalink: /zadanie-haslo/
 ---
 Zadanie logowanie haslem
 ```html
@@ -12,7 +13,7 @@ Zadanie logowanie haslem
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hasło logowanie - Walukiewicz</title>
+  <title>Hasło logowanie</title>
 
   <style>
     *,
@@ -133,7 +134,6 @@ Zadanie logowanie haslem
         document.querySelector('.fail').classList.remove('hidden')
       }
     })
-    // Walukiewicz Łukasz
   </script>
 </body>
 </html>
